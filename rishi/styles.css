@@ -1,0 +1,157 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+:root {
+    --clr-dark: black;
+    --clr-light: white;
+    --clr-bg: #e11d48;
+}
+body {
+    margin: 50px 50px;
+    padding: 0;
+    line-height: 1.6;
+    word-spacing: 1.4px;
+
+    color: var(--clr-dark);
+    background-color: var(--clr-light);
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+}
+.Flex {
+    width: 80%;
+    height: 700px;
+    margin: 0 auto;
+    border: 10px solid var(--clr-dark);
+    display: flex;
+    flex-direction: row;
+    /* justify-content: start; */
+    /* align-items: center; */
+    /* gap: 1em; */
+    flex-wrap: wrap;
+    /* align-content: space-between; */
+}
+.item {
+    width: 150px;
+    height: 150px;
+    background-color: var(--clr-bg);
+    padding: 2em;
+    font-weight: 700;
+    color: var(--clr-light);
+    text-align: center;
+    border: 10px solid red;
+    border-radius: 10px;
+}
+.item3 {
+    /* flex-shrink: 5; */
+    /* flex-basis: 300px; */
+    /* flex: 1; */
+    /* align-self: flex-end; */
+    order: -1;
+}
+.item1 {
+    order:0;
+}
+/*
+h1{
+    color: black;
+    text-align: center;
+    border: 1px solid black;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 10px 20px;
+}
+ .grids{
+    margin-top: 10px;
+    margin-left: 10px;
+    grid-column: auto;
+    background-color: white;
+    display: grid;
+    grid-template-rows: 100px 100px; 
+    grid-template-columns: 100px 100px 100px 100px 100px 100px;
+    grid-template-areas: 'header header header';
+}
+.item{
+    background-color: pink;
+    border: 1px solid magenta;
+    font-size: 50px;
+    text-align: center;
+    line-height: 200px;
+}
+
+.item1{
+    grid-row-start: 1;
+    grid-row-end: 4;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+.item2{
+    grid-row-start: 1;
+    grid-row-end: 4;
+    grid-column-start: 3;
+    grid-column-end: 5;
+}
+.item3{
+    grid-row-start: 1;
+    grid-row-end: 4;
+    grid-column-start: 5;
+    grid-column-end: 7;
+} 
+@media (min-width: 375px){
+    h1{
+        width: 100%;
+        height: auto;
+        color:red;
+    }
+} 
+@media (min-width: 414px){
+    h1{
+        width: 100%;
+        height: auto;
+        color:aqua;
+    }
+}
+@media (min-width: 768px){
+    h1{
+        width: 100%;
+        height: auto;
+        color:blue;
+    }
+}
+@media (min-width: 1024px){
+    h1{
+        width: 100%;
+        height: auto;
+        color:black;
+    }
+} */
+
+/* .container {
+  position: relative;
+  height: 200px;
+  border: 2px solid black;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  color: white;
+  text-align: center;
+  line-height: 100px;
+}
+
+.absolute {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: red;
+}
+
+.relative {
+  position: relative;
+  top: 100px;
+  left: 100px;
+  background: blue;
+} */

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        header{
+            background-color: gray;
+            color:black;
+            text-align: center;
+        }
+        main{
+            text-align: center;
+            font-size: 20px;
+        }
+        #num1,#num2,button:hover{
+            cursor: pointer;
+
+        }
+        #symb{
+            text-align: center;
+            font-size: 20px;   
+        }
+        .button_row{
+            display: flex;
+            gap:20px;
+            justify-content: center;
+            margin-bottom: 30px;
+        }
+        div{
+            margin-bottom: 20px;
+        }
+    </style>
+    <title>Basic Calculator</title>
+</head>
+<body>
+    <header>
+        <h1>Basic Calculator</h1>
+    </header>
+
+    <main>
+        <div>
+            Enter the first number:
+            <input type = "number" id="num1"> 
+        </div>
+        <div>
+            Enter the second number:
+            <input type="number" id="num2">
+        </div>
+        <div class="button_row">
+            <button onclick="myFunction('add')">+</button> 
+            <button onclick="myFunction('sub')">-</button> 
+            <button onclick="myFunction('mul')">*</button> 
+            <button onclick="myFunction('div')">/</button> 
+        </div>
+        Your result is:
+        <p id="result"></p>
+    </main>
+<script src="./day7.js"></script>
+
+</body>
+</html>
+
+
+
+     
+     
+
+        <footer>
+            <div id="first_footer">
+                <aside id="f1">
+                    <p>&#128205; Address</p>
+                    <p>A108 Adam Street, New York, NY 62694, USA</p>
+                </aside><!--first footer aside-->
+                <aside id="f1" >
+                    <p>&#128222; Reservations</p>
+                    <p>Phone: +1 5589 55488 55<br><b>Email:</b> info@example.com</p>
+                </aside><!--second footer aside-->
+                <aside id="f1">
+                    <p>&#128337; Opening Hours</p>
+                    <p><b>Mon-Sat: 11AM</b> - 11PM<br>Sunday: Closed</p> 
+                </aside><!--third footer aside-->
+                <aside id="f1" style="border: none;">
+                    <p>FOLLOW US</p>
+                    <ion-icon name="logo-facebook"></ion-icon>
+                    <a id="linkedin" style="color:white;" href="https://www.linkedin.com/in/sridhar-reddy-37b63a203/" target="_blank"><ion-icon name="logo-linkedin"></ion-icon></a>
+                    <a href="https://x.com/Sridhar67956954" target="_blank"><ion-icon name="logo-twitter" style="color:white;"></ion-icon></a>
+                    <a style="color:white" href="https://www.instagram.com/sridhar.rdy/" target="_blank"><ion-icon name="logo-instagram"></ion-icon></a>
+                </aside><!--last box footer-->
+            </div><!--Footer 1-->
+            <hr>
+            <div id="second_footer">
+                <p>&#169; Copyright <b>Yummy.</b> All Rights Reserved</p>
+                Designed by Sridhar <p id="model">CSS3 HTML5</p>
+            </div><!--Footer 2-->
+        </footer><!--Footer 2-->
+    </div><!--container-->
+
+    
+</body>
+</html>

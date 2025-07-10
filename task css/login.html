@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login Page</title>
+  <style>
+    .loginContainer {
+      width: 100%;
+      max-width: 400px;
+      margin: 100px auto;
+      padding: 30px;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      background-color: white;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .heading {
+      text-align: center;
+      margin-bottom: 20px;
+      font-size: 25px;
+      font-weight: bold;
+    }
+
+    .label {
+      display: block;
+      margin-bottom: 6px;
+      font-weight: 500;
+    }
+
+    .input {
+      width: 100%;
+      padding: 10px;
+      /* margin-bottom: 12px; */
+      border: 1px solid #aaa;
+      border-radius: 5px;
+      font-size: 14px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .button {
+      width: 100%;
+      padding: 10px;
+      background-color: #1976d2;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-weight: bold;
+      cursor: pointer;
+      /* margin-top: 10px; */
+    }
+
+    .button:hover {
+      background-color: #135ca1;
+    }
+
+    .text {
+      margin-top: 15px;
+      text-align: center;
+      font-size: 14px;
+    }
+
+    .link {
+      color: #1976d2;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .link:hover {
+      text-decoration: underline;
+    }
+
+    .error {
+      color: red;
+      font-size: 13px;
+      margin-top: 3px;
+      margin-bottom: 10px;
+    }
+
+    .errorMsg {
+      background-color: #ffe6e6;
+      color: #cc0000;
+      padding: 10px;
+      border-radius: 5px;
+      margin-bottom: 10px;
+      text-align: center;
+    }
+
+    .successMsg {
+      background-color: #e6ffe6;
+      color: #007e33;
+      padding: 10px;
+      border-radius: 5px;
+      margin-bottom: 10px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="loginContainer">
+    <h1 class="heading">Please Login</h1>
+
+    <label for="email" class="label">Email ID</label>
+    <input
+      type="text"
+      name="_id"
+      id="email"
+      placeholder="Enter Mail ID"
+      class="input"
+    />
+    <p class="error">[Email error here]</p>
+
+    <label for="password" class="label">Password</label>
+    <input
+      type="password"
+      name="password"
+      id="password"
+      placeholder="Enter Password"
+      class="input"
+    />
+    <p class="error">[Password error here]</p>
+
+    <div class="successMsg">[Success message here]</div>
+    <div class="errorMsg">[Error message here]</div>
+
+    <button class="button">Login</button>
+
+    <p class="text">
+      Don’t have an account?
+      <a href="/register" class="link">Sign up</a>
+    </p>
+
+    <p class="text">
+      <a href="/forgotpassword" class="link">Forgot Password?</a>
+    </p>
+  </div>
+
+</body>
+</html>
